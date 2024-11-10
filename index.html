@@ -1,45 +1,75 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume">
+        <div class="header">
+            <div class="profile-photo">
+                <img src="profile.jpg" alt="Profile Photo">
+            </div>
+            <div class="contact-info">
+                <h1>Thamonwan Sampuntasit</h1>
+                <h2>Computer Science Student</h2>
+                <div class="contact-details">
+                    <p>0910726013</p>
+                    <p>gamthamonwan04@gmail.com</p>
+                    <p>beforebreakfast</p>
+                </div>
+            </div>
+        </div>
 
-    <title>A very simple example</title>
+        <div class="content">
+            <div class="left-column">
+                <div class="section education">
+                    <h3>Education</h3>
+                    <p><strong>Bachelor of Science in Computer Science</strong></p>
+                    <p>University of Phayao</p>
+                    <p>Expected Graduation: 2027</p>
+                    <p>Started: 2023</p>
+                </div>
 
-    <style>
+                <div class="section expertise">
+                    <h3>Expertise</h3>
+                    <ul>
+                        <li>Programming Languages</li>
+                        <li>Front-End Development</li>
+                        <li>Database Management</li>
+                        <li>Problem-Solving Skills</li>
+                        <li>Version Control</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Collaborative Skills</li>
+                    </ul>
+                </div>
 
-      .description {
-        padding-top: 40px;
-        font-weight: bold;
-      }
+                <div class="section language">
+                    <h3>Language</h3>
+                    <ul>
+                        <li>Fluent in Thai</li>
+                        <li>Intermediate English</li>
+                    </ul>
+                </div>
+            </div>
 
-    </style>
+            <div class="right-column">
+                <div class="section profile">
+                    <h3>Profile</h3>
+                    <p>"I'm a second-year Computer Science student, building my skills in programming with languages like Python, Java, CSS, HTML, JavaScript, and SQL. While I'm still working on becoming fully proficient, I'm passionate about growing in these areas and eager to tackle new projects that challenge my knowledge and help me improve."</p>
+                </div>
 
-    <script>
-
-      function start() {
-        setInterval(function() {
-          const red = Math.floor(Math.random() * 256) + 1;
-          const green = Math.floor(Math.random() * 256) + 1;
-          const blue = Math.floor(Math.random() * 256) + 1;
-          document.getElementById("myHeading").style.color =
-            `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`;
-        }, 250);
-      }
-
-    </script>
-
-  </head>
-
-  <body onLoad="start();">
-
-    <h1 id="myHeading">My name is Thamonwan Sampuntasit;</h1>
-    <h2 id="myHeading">My nickname is GAM;</h2>
-    <hr />
-    <div class="description">This is a very simple example that shows HTML, CSS, and JS</div>
-
-  </body>
-
+                <div class="section work-experience">
+                    <h3>Work Experience</h3>
+                    <h4>Smart Dormitory Management System <span>2024</span></h4>
+                    <p><strong>Overview:</strong> Developed an application for streamlined dormitory management, integrating room booking, payment verification, and chatbot support.</p>
+                    <p><strong>Role:</strong> Designed and built features using React, Node.js, and Dialogflow for responsive user interaction.</p>
+                    <p><strong>Impact:</strong> Enhanced user experience by improving booking accuracy and response time for student inquiries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
